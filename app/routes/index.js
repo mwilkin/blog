@@ -5,6 +5,10 @@ export default Ember.Route.extend({
     return this.store.findAll('post');
   },
   actions: {
+    destroyPost(post) {
+      post.destroyRecord();
+      this.transitionTo('index');
+    },
     save3(params) {
       var newPost = this.store.createRecord('post', params);
       newPost.save();
