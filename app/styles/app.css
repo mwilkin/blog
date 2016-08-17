@@ -24,3 +24,9 @@ button {
 .head-text {
   text-align: center;
 }
+
+#leah {
+  border: 2px solid black;
+  border-width: thin;
+
+}
