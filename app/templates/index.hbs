@@ -5,13 +5,10 @@
   <br>Categories: <a href="/Transportation">Transportation</a> | <a href="/Safety">Safety</a> | <a href="/Personal Hygiene">Personal Hygiene</a> | <a href="/Matt's Feelings">Matt's Feelings</a> | <a href="/personal">personal</a>
 </div>
 <div class="container">
-
   {{new-post save2="save3"}}
   <div class="container">
     {{#each model as |post|}}
       {{post-tile post=post update="update" destroyPost="destroyPost"}}
     {{/each}}
   </div>
-
-
 </div>
