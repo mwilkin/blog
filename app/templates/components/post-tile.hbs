@@ -1,7 +1,8 @@
-<li>
+<div>
   <h3>{{post.title}} - {{post.date}} - {{post.category}}</h3>
   <br>
   <p>{{post.body}}</p>
-  <hr>
+  {{update-post post=post update="update"}}
   <button {{action 'delete' post}}>Delete Post</button>
-</li>
+  <hr>
+</div>
