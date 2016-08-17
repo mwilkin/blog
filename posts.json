@@ -1,0 +1,17 @@
+{ "posts": [{
+    "title": "My Sweet Scooter",
+    "body": "I love my scooter so much. Its name is Skip. Skip never lets me down.",
+    "date": "08/14/2016",
+    "category": "Things I Love"
+  }, {
+    "title": "My Awesome Safety Vest",
+    "body": "My vest is reflective. It keeps me safe at night.",
+    "date": "08/12/2016",
+    "category": "Safety"
+  }, {
+      "title": "Taking the Bus",
+      "body": "Taking the bus to school is exciting. I enjoy sitting in a seat and not having to pedal while I commute.",
+      "date": "08/10/2016",
+      "category": "Transportation"
+  }]
+}
