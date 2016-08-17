@@ -5,3 +5,22 @@ body {
 .scooter-matt {
   color: hotpink;
 }
+
+.navbar {
+  background-color: lavender;
+}
+
+button {
+  margin: 1%;
+  background-color: lavender;
+  border: 1px solid grey;
+}
+
+.scoot {
+  margin-top: 1%;
+  max-width: 50%;
+}
+
+.head-text {
+  text-align: center;
+}
