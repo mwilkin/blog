@@ -1,8 +1,10 @@
-<div>
-  <h3>{{post.title}} - {{post.date}} - {{post.category}}</h3>
-  <br>
-  <p>{{post.body}}</p>
-  {{update-post post=post update="update"}}
-  <button class="btn btn-danger"{{action 'delete' post}}>Delete Post</button>
-  <hr>
-</div>
+{{#each sortedPosts as |post|}}
+  <div>
+    <h3>{{post.title}} - {{post.date}} - {{post.category}}</h3>
+    <br>
+    <p>{{post.body}}</p>
+    {{update-post post=post update="update"}}
+    <button class="btn btn-danger"{{action 'delete' post}}>Delete Post</button>
+    <hr>
+  </div>
+{{/each}}

@@ -1,10 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  // posts: Ember.computed.sort('posts', 'sortDefinition'),
-  // sortDefinition: ['date'],
-  //www.codeschool.com/blog/2016/03/21/dynamic-sorting-in-emberjs/
 
+  sortBy: ['date:desc'],
+  sortedPosts: Ember.computed.sort('posts', 'sortBy'),
   actions: {
     update(post, params) {
       this.sendAction('update', post, params);
