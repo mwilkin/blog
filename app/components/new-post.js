@@ -11,7 +11,8 @@ export default Ember.Component.extend({
         title: this.get('title') ? this.get('title').capitalize() : "",
         body: this.get('body') ? this.get('body').capitalize() : "",
         date: this.get('date') ? this.get('date') : "",
-        category: this.get('category') ? this.get('category').capitalize() : ""
+        category: this.get('category') ? this.get('category').capitalize() : "",
+        comments: []
       };
       this.set('addNewPost', false);
       this.sendAction('save2', params);
