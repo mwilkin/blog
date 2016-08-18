@@ -1,5 +1,14 @@
 <h2>{{model.title}}</h2>
 
-{{new-comment save2="save3" post=model}}
+
 {{post-detail post=model destroyPost="destroyPost"}}
 {{update-post post=model update="update"}}
+<h2>Comments:</h2>
+{{#each model.comments as |comment|}}
+  {{comment.user}} says:
+  {{comment.message}}
+  <br>
+{{/each}}
+
+
+{{new-comment save2="save3" post=model}}

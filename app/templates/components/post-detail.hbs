@@ -1,8 +1,3 @@
 <p>{{post.body}}</p>
 
-{{#each post.comments as |comment|}}
-  {{comment.user}} says:
-  {{comment.message}}
-  <br>
-{{/each}}
 <button class="btn btn-danger"{{action 'delete' post}}>Delete Post</button>
